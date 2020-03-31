@@ -64,24 +64,25 @@ for c in subreddit.stream.comments():
 		
 	elif '/' in body:
 		
-		ticker = re.search(r'[A-Z]{1,5} ', c.body)
-		pos_tsd = re.search(r'\w{1,5} \d{1,5}[cp] \d{1,2}/\d{1,2}', body)
-		pos_tds = re.search(r'\w{1,5} \d{1,2}/\d{1,2} \d{1,5}[cp]', body)
+		ticker = re.search(r'[A-Z]{1,5} \d', c.body)
+		pos_tsd = re.search(r'[A-Z]{1,5} \d{1,5}[cp] \d{1,2}/\d{1,2}', c.body)
+		pos_tds = re.search(r'[A-Z]{1,5} \d{1,2}/\d{1,2} \d{1,5}[cp]', c.body)
 	#	print('.')
 		if pos_tds is not None:
 			print(' ' * len(out) , end = '  \r')
 			#print('%s %s %s' % (str(ticker.group(0)), strike.group(0), date.group(0)))
 			if ticker is not None:
-				print('Ticker: '+ticker.group(0))
-				
-			print(pos_tds .group(0) +'\n'+('-'*20)+'\n' +body )
+				#print('Ticker: '+ticker.group(0))
+				pass
+			print(pos_tds .group(0))
 			print('-'*20)
 		elif pos_tsd is not None:
 			print(' ' * len(out), end = '  \r')
 			#print('%s %s %s' % (str(ticker.group(0)), strike.group(0), date.group(0)))
 			if ticker is not None:
-				print('Ticker: '+ticker.group(0))
-			print(pos_tsd .group(0) +'\n'+('-'*20)+'\n' +body)
+				#print('Ticker: '+ticker.group(0)
+				pass
+			print(pos_tsd .group(0))
 			print('-' *20)
 		
 #	print('\n')
