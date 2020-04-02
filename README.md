@@ -2,6 +2,8 @@
 
 Outputs the percentage of people commenting "call" or "put" on r/wallstreetbets. 
 
+Collects (most) positions commented within 24 hours and saves it to a csv file to be parsed.
+
 Todo:
 
 -add minutely, hourly, daily, and weekly trends for "call" and "put" data
