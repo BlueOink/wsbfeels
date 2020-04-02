@@ -47,10 +47,6 @@ subreddit = reddit.subreddit('wallstreetbets')
 
 put = 1
 call = 1
-
-
-put = 1
-call = 1
 i = 0
 print('_-OPTIONS-_')
 for submission in subreddit.new(limit=999):
