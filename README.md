@@ -2,7 +2,7 @@
 
 Outputs the percentage of people commenting "call" or "put" on r/wallstreetbets. 
 
-Collects (most) positions commented within 24 hours and saves it to a csv file to be parsed.
+Collects (most) positions commented and posted within 24 hours and saves it to a csv file to be parsed.
 
 ## Usage
  You gotta install praw and python and get reddit app auth stuff
