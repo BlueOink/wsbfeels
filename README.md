@@ -4,7 +4,9 @@ Outputs the percentage of people commenting "call" or "put" on r/wallstreetbets.
 
 Collects (most) positions commented within 24 hours and saves it to a csv file to be parsed.
 
-Todo:
+## Usage
+ You gotta install praw and python and get reddit app auth stuff
+## Todo
 
 - test if inverse wsb is profitable. Maybe even have a chart.
 
