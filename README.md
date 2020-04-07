@@ -6,6 +6,12 @@ Collects (most) positions commented within 24 hours and saves it to a csv file t
 
 ## Usage
  You gotta install praw and python and get reddit app auth stuff
+
+ First run `python options.py`
+
+ Then run `python create_post.py >> out.txt`
+ 
+ This will create a file called out.txt that will be the exact text needed for the post on reddit. You can also parse it a different way by accessing positions.csv and dcomments.csv .
 ## Todo
 
 - test if inverse wsb is profitable. Maybe even have a chart.
